@@ -1,4 +1,5 @@
 NOTE, THIS PROJECT IS LEGACY. IT IS VERY OLD AND DOES NOT REPRESENT ASTERO'S CURRENT SKILLS PROPERLY.
+Initial Repository on Gitlab: https://gitlab.com/Aster0/potioncreation-reborn
 
 
 
