@@ -1,3 +1,7 @@
+NOTE, THIS PROJECT IS LEGACY. IT IS VERY OLD AND DOES NOT REPRESENT ASTERO'S CURRENT SKILLS PROPERLY.
+
+
+
 <div align="center">
 
 <table align="center"><tr><td align="center" width="9999">
