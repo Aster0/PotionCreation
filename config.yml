@@ -1,0 +1,129 @@
+settings:
+  maxPotionLevel: 5
+  # How much the potion increases in price by level.
+  potionLevelIncrementPrice: 5000
+  # Duration is in minutes.
+  maxPotionDuration: 3
+  # Increment price will multiply by 0.1. Meaning, 5000 will be $500 price increment each time.
+  potionDurationIncrementPrice: 5000
+  freshlyBrewedPotion: 
+    name: "&6&lPOTION MIX"
+    sound: BLOCK_BREWING_STAND_BREW
+    pass:
+      description:
+        - ""
+        - "&7It shimmers, the contents shines back to you." 
+        - ""
+      # Colors are in integer, you can convert RGB/HEX at this website: https://www.shodor.org/stella2java/rgbint.html
+      color: 12811008
+    fail:
+      name: "&7&lPOTION MIX"
+      description:
+        - ""
+        - "&7It looks dull, with some grey liquid inside."
+        - ""
+      # Colors are in integer, you can convert RGB/HEX at this website: https://www.shodor.org/stella2java/rgbint.html    
+      color: 9539208
+      rate: 50
+      effects:
+        # POTION-EFFECT;LEVEL;DURATION
+        - SLOW;3;1
+        - POISON;2;3
+    
+  
+  
+
+gui:
+  potionMixingMenu:
+    title: "&6&lMIX YOUR POTIONS!"
+    size: 54
+  
+  goBackItem:
+    type: BARRIER
+    name: "&c&lGO BACK"
+    amount: 1
+    slot: 45
+    description:
+      - ""
+      - "&cLeft click to go back"
+      - ""
+  nextPageItem:
+    type: ARROW
+    name: "&a&lNEXT PAGE"
+    amount: 1
+    slot: 52
+    description:
+      - ""
+      - "&aLeft click to flip the page."
+      - ""
+  cartItem:
+    type:
+      notEmpty: CHEST_MINECART
+      empty: MINECART
+      notEnoughMoney: COAL
+    name: "&7&lCART"
+    amount: 1
+    slot: 53
+    description:
+      notEmpty: 
+        - ""
+        - "&7&lYOUR ITEMS"
+        - "%potions%"
+        - ""
+        - "&7&lTOTAL PRICE: &a$%price%"
+      empty:
+        - "&cYou have nothing in your cart"
+      notEnoughMoney:
+        - "&cYou do not have enough money."
+  potionSelectorItem:
+    # If random is set to true, player will not be able to select their own potion base.
+    # The pricing will be taken from the potion base price. 
+    random: true
+    name: "&6&lSELECT YOUR BASE POTION"
+    amount: 1
+    slot: 48
+    type:
+      - POTION
+      - SPLASH_POTION
+      - LINGERING_POTION
+    description:
+      - ""
+      - "&eCURRENT BASE POTION: &6%potiontype%"
+      - "&ePRICE: &6$%price%"
+      - ""
+      - "&aLeft click to scroll through"
+      - "&ato change your potion base!" 
+  levelSelectorItem:
+    random: true
+    type: EXPERIENCE_BOTTLE
+    name: "&6&lSELECT YOUR POTION LEVEL"
+    amount: 1
+    slot: 49
+    description:
+      - ""
+      - "&eCURRENT POTION LEVEL: &6%potionlevel%"
+      - "&ePRICE: &6$%price%"
+      - ""
+      - "&aLeft click to scroll through"
+      - "&ato change your potion base!"   
+  durationSelectorItem:
+    random: true
+    type: CLOCK
+    name: "&6&lSELECT YOUR POTION DURATION"
+    amount: 1
+    slot: 50
+    description:
+      - ""
+      - "&eCURRENT DURATION: &6%potionduration%"
+      - "&ePRICE: &6$%price%"
+      - ""
+      - "&aLeft click to scroll through"
+      - "&ato change your potion's duration!"   
+  emptyCartItem:
+    type: MAP
+    name: "&6&lEMPTY YOUR CART"
+    amount: 1
+    slot: 46
+    description:
+      - ""
+ 

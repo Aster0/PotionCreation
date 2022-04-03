@@ -1,0 +1,4 @@
+messages:
+  prefix: "&6&lPOTIONCREATION &7→ "
+  noPermission: "&cOopsie! You do not have permission to do this!"
+  pluginReloaded: "&aThe plugin has been successfully reloaded."
