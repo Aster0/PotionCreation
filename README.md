@@ -18,7 +18,7 @@ This was a free plugin that was not really optimized. You can find the free plug
 
 ---
 <br>
-![asd](https://i.imgur.com/8mwAcoN.png)
+![Image of features](https://i.imgur.com/Pbl9C9E.png)
 
 **PotionCreation** is a plugin that allows your players to create a unique potion with their choice of effects with the selected potion base, they are also able to set the level & duration or if you want, the plugin's complex system allows for random selection, so it's not too unfair to players w/o money.
 
